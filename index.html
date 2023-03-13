@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerball Picker</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="heading py-3">PowerBall</h1>
+            </div>
+            <div class="col-lg-12">
+                <ul class="content d-flex flex-wrap">
+                    <li class="ball"><span id="num1">1</span></li>
+                    <li class="ball"><span id="num2">2</span></li>
+                    <li class="ball"><span id="num3">3</span></li>
+                    <li class="ball"><span id="num4">4</span></li>
+                    <li class="ball"><span id="num5">5</span></li>
+                    <div class="ball red"><span id="power">10</span></div>
+                </ul>
+
+                <div class="input-number my-5">
+                    <h2>Enter Your Favorites Number</h2>
+                    <ul class="d-flex justify-content-center">
+                        <li><input type="number" class="inputNum" id="inputNum1" value=""></li>
+                        <li><input type="number" class="inputNum" id="inputNum2" value=""></li>
+                        <li><input type="number" class="inputNum" id="inputNum3" value=""></li>
+                        <li><input type="number" class="inputNum" id="inputNum4" value=""></li>
+                        <li><input type="number" class="inputNum" id="inputNum5" value=""></li>
+                        <li><input type="number" class="inputNum red" id="inputPower" value=""></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="text-center my-5">
+                <h2 id="result"></h2>
+            </div>
+            <div class="col-lg-12 text-center">
+                <h1 class="heading py-4">Powerball Picker</h1>
+                <button id="btnRandomNumber">Draw Numbers</button>
+                <button id="btnReset">Reset</button>
+            </div>
+        </div>
+        <h3 class="py-5 text-center">Write these carefully down, and play! <br>
+            No wins expressed nor implied!</h3>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

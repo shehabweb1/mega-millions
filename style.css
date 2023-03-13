@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tinos:ital,wght@0,400;0,700;1,700&display=swap");
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Tinos', serif;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	background-color: #95b4d1;
+}
+
+.heading {
+	font-family: "Tinos", serif;
+	font-size: 48px;
+	font-weight: 700;
+	font-style: italic;
+}
+.content {
+	justify-content: space-around;
+	padding-bottom: 50px;
+}
+.inputNum,
+.ball {
+	background-color: white;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	box-shadow: 10px 12px 20px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputNum.red,
+.ball.red {
+	background-color: red;
+	color: white;
+	border: none;
+}
+
+.inputNum.red,
+.ball.red span {
+	text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.ball span {
+	font-size: 48px;
+	font-weight: 800;
+	text-shadow: 2px 2px red;
+}
+
+.input-number h2 {
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 42px;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.input-number li {
+	padding: 0 15px;
+}
+
+.inputNum {
+	text-align: center;
+	outline: none;
+	border: 5px solid black;
+	color: black;
+	font-size: 48px;
+	font-weight: 800;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+button {
+	background-color: yellow;
+	padding: 5px 7px;
+	font-size: 26px;
+	font-weight: 700;
+	border: 2px solid gray;
+	outline: none;
+}
+
+#result {
+	font-family: "Tinos", serif;
+	font-size: 48px;
+	font-weight: 700;
+	color: rgb(19, 82, 255);
+}
+
+@media (max-width: 768px) {
+	.heading {
+		font-size: 26px;
+		font-weight: 500;
+	}
+	.inputNum,
+	.ball {
+		height: 60px;
+		width: 60px;
+	}
+	.ball {
+		margin: 0 20px;
+	}
+	.content {
+		flex-wrap: wrap;
+		gap: 20px 0;
+	}
+	.inputNum,
+	.ball span {
+		font-size: 32px;
+		font-weight: 600;
+	}
+	.input-number h2 {
+		font-size: 26px;
+		font-weight: 500;
+	}
+	button {
+		padding: 4px 5px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
